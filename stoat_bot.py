@@ -80,6 +80,4 @@ class MyClient(Client):
         await super().close()
 
 
-if __name__ == "__main__":
-    client = MyClient()
-    client.run(os.environ["BOT_TOKEN"])
+stoat_client = MyClient()

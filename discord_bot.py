@@ -80,9 +80,7 @@ class MyClient(discord.Client):
         await super().close()
 
 
-if __name__ == "__main__":
-    intents = discord.Intents.default()
-    intents.message_content = True
-    
-    client = MyClient(intents=intents)
-    client.run(os.environ["DISCORD_TOKEN"])
+intents = discord.Intents.default()
+intents.message_content = True
+
+discord_client = MyClient(intents=intents)
